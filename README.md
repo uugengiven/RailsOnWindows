@@ -11,7 +11,8 @@ Running these scripts requires `Expand-Archive`, which is part of Powershell 5. 
 
 ## Instructions
 
-1. Run `part 1.ps1` from Powershell - this installs dependencies
-2. Open a new Powershell terminal and run `part 2.ps1` - this upgrades dependencies & installs Rails.
+1. Install [Chocolatey](http://www.chocolatey.org)
+2. Run `part 1.ps1` from Powershell - this installs dependencies
+3. Open a new Powershell terminal and run `part 2.ps1` - this upgrades dependencies & installs Rails.
 
 After these steps, you should be able to successfully run `rails new project_name`.
