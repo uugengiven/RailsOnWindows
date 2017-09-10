@@ -5,6 +5,7 @@ This will prepare your Windows environment for working on Ruby on Rails projects
 * Ruby 2.3.3
 * Ruby DevKit
 * Sqlite
+* NodeJS
 * Rails
 
 Running these scripts requires `Expand-Archive`, which is part of Powershell 5. This is the default Powershell on Windows 10; older versions of Windows may need to update Powershell to v5.
