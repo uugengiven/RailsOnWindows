@@ -23,3 +23,5 @@ pushd $rubygems
 ruby setup.rb
 popd
 popd
+
+gem install rails
