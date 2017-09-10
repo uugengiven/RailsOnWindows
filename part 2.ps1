@@ -1,6 +1,7 @@
 # Variables
 $rubygems = "rubygems-2.6.13"
 $rgzip = $rubygems + ".zip"
+$tempdir = c:\temp
 
 # Update DevKit
 @"
@@ -13,12 +14,12 @@ popd
 
 
 # Update RubyGems (Windows install has bad SSL on versions older than 2.4)
-mkdir c:\temp
-pushd c:\temp
+mkdir $tempdir
+pushd $tempdir
 
 Invoke-WebRequest -uri https://rubygems.org/rubygems/$rgzip -OutFile $rgzip
-Expand-Archive $rgzip -DestinationPath c:/temp
-pushd c:\temp\$rubygems
+Expand-Archive $rgzip -DestinationPath $tempdir
+pushd $rubygems
 ruby setup.rb
 popd
 popd
